@@ -1,0 +1,122 @@
+:root{
+    --violet: #663399;
+    --heading: 'Poppins', sans-serif;
+    --text:'Open Sans', sans-serif;
+}
+/* Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--violet);
+    background-image: url("../images/bg-desktop.svg");
+    font-family: var(--text);
+    font-weight: 400;
+    color: white;
+}
+header{
+    padding: 50px 0px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.mockup{
+    width: 55%;
+}
+.mockup img{
+    width: 90%;
+    
+}
+.info{
+    width: 45%;
+    padding: 35px 0px;
+}
+.info h1{
+    font-family: var(--heading);
+    font-size: 42px;
+    font-weight: 700;
+}
+.info p{
+    font-size: 19px;
+    margin: 20px 0px 45px 0px;
+}
+.info a{
+    text-decoration: none;
+    color: var(--violet);
+    background-color: #fff;
+    padding: 13px 70px;
+    border-radius: 35px;
+    box-shadow: 0px 10px 30px -3px rgba(0,0,0,0.3);    
+    position:relative;
+}
+.info a:hover{
+    top: 1px;
+    background-color: rgb(240, 239, 239);
+}
+.social{
+    display: flex;
+    justify-content: flex-end;
+}
+.social a{
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff; 
+    border-radius: 50%;
+    margin-left: 15px;
+
+}
+.social a span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 375px){
+    body{
+        background-image: url("../images/bg-mobile.svg");
+        background-repeat: no-repeat;
+    }
+    header{
+        padding: 30px 0px 50px 0px;
+    }
+    .logo{
+        width: 45%;
+    }
+    .container{
+        width: 80%;
+    }
+    .mockup{
+        width: 100%;
+    }
+    .mockup img{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+        text-align: center;
+        margin: 30px 0px 30px 0px;
+    }
+    .info h1{
+        font-size: 25px;
+    }
+    .info p{
+        font-size: 17px;
+    }
+    .social{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+}
