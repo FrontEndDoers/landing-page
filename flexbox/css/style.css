@@ -1,0 +1,60 @@
+/* 
+Flexbox
+    display:flex
+        Convierte el contenedor en un contexto para flexbox y hace que el contenedor sea un elemento de bloque para los elementos que lo rodean
+    display:inline-flex
+        Convierte el contenedor en un contexto para flexbox y hace que el contenedor sea un elemento en línea para los elementos que lo rodean
+
+    flex-direction: row(default) | row-reverse | column | column-reverse
+        Modifica la dirección y cual es el eje principal.
+        Por defecto es row (horizontal de izquierda a derecha)
+        row-reverse (horizontal de derecha a izquierda)
+        column vertical de arriba abajo
+        column-reverse vertical de abajo arriba
+
+    flex-wrap: no-wrap(default) | wrap | wrap-reverse
+        Controla si los elementos saltarán de línea o no
+        no-wrap es el valor por defecto, un contenedor flex va a hacer que todos los elementos se queden en una línea si no le especificamos lo contrario
+        wrap hace que los elementos que no quepan en una línea (manteniendo sus dimensiones, si las tuvieran) salten a la linea inferior.
+        wrap-reverse hace lo mismo que wrap pero en lugar de hacer que salten a la línea inferior, hace que salten a la linea superior. 
+*/
+/* 
+Flexbox
+    Alineamiento
+    Estas propiedades para alinear se aplican SIEMPRE al flex-container
+
+    Existen propiedades para el main-axis y para el cross-axis
+    main-axis:
+        justify-content: flex-start(default) | center | space-between | space-around | space-evenly | flex-end
+            flex-start alinea los elementos al principio del main axis
+            center centra los elementos en la mitad del main axis
+            flex-end alinea los elementos al final del main axis
+            space-between distribuye los items a la misma distancia y no deja espacio exterior ni el primer ni el último flex-end.
+            space-around distribuye los items a la misma distancia y deja un espacio exterior en el primero y en el último flex-item
+            space-evenly distribuye los items y los espacios exteriores del primer y último flex-item dejando la misma distancia entre todos.
+    
+    cross-axis:
+        align-items: Una sola línea.
+            flex-start | center | flex-end | stretch(default) | baseline
+        align-content:varias líneas
+            flex-start | center | flex-end | stretch(default) | baseline
+
+        align-self: Se aplica al flex-item. Sirve para alinear un elemento en concreto en el cross-axis
+*/
+
+.flex-container{
+    background-color: deepskyblue;
+    padding: .5em 0;
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: indigo;
+    margin: .5em;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
